@@ -1,0 +1,139 @@
+:root {
+  --normal: "Helvetica Neue";
+  --italic: "Helvetica Neue Medium";
+  --medium: "Helvetica Neue Medium";
+  --medium-italic: "Helvetica Neue Medium Italic"; }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url(../fonts/HelveticaNeueCyr-Roman.otf); }
+@font-face {
+  font-family: "Helvetica Neue Italic";
+  src: url(../fonts/HelveticaNeueCyr-Italic.otf); }
+@font-face {
+  font-family: "Helvetica Neue Medium";
+  src: url(../fonts/HelveticaNeueCyr-Medium.otf); }
+@font-face {
+  font-family: "Helvetica Neue Medium Italic";
+  src: url(../fonts/HelveticaNeueCyr-MediumItaicl.otf); }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Helvetica Neue", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.4s; }
+
+a:hover,
+button:hover {
+  opacity: 0.7;
+  cursor: pointer; }
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.wrapper {
+  max-width: 360px;
+  margin: 0 auto; }
+
+.container {
+  width: 360px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.header {
+  padding: 15px 0 0; }
+  .header__inner {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center; }
+  .header__phone {
+    font-family: var(--italic);
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.54);
+    position: relative;
+    height: 20px;
+    margin-bottom: 10px; }
+    .header__phone::after {
+      content: "";
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      left: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../images/phone.png); }
+
+.module__title {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: var(--normal);
+  color: rgba(0, 0, 0, 0.87);
+  margin-top: 35px; }
+
+.info {
+  font-family: var(--normal);
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  line-height: 24px; }
+  .info__inner {
+    background: #F5F5F5;
+    border-radius: 5px;
+    padding: 15px; }
+  .info__address, .info__time, .info__phone, .info__price {
+    margin-top: 15px; }
+  .info__show {
+    color: #0E9BB4;
+    text-decoration-line: underline; }
+  .info__buttons {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .info__buttons button {
+      border-radius: 50px;
+      width: 100%;
+      height: 50px;
+      font-size: 16px;
+      line-height: 24px;
+      border: none;
+      transition: all 0.3s ease; }
+    .info__buttons button:first-child {
+      background: #0E9BB4;
+      color: #fff; }
+    .info__buttons button:last-child {
+      color: #0E9BB4;
+      border: 1px solid #BDBDBD;
+      margin-top: 15px; }
+
+/*# sourceMappingURL=style.css.map */
